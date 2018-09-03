@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>理赔中心</title>
+		<link rel="shortcut icon" href="img/logo.png">
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/mian.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/container.js"></script>
+		<link rel="stylesheet" href="css/ClaimCenter.css" />
+		<link rel="stylesheet" href="css/productmodel.css" />
+		<script src="js/extendPagination.js"></script>
+	</head>
+
+	<body>
+		<div class="header b-header">
+			<div class="container">
+				<!--<span class="fl-right lang-zh"></span>
+				<a href="login.html" class="fl-right icon-user"></a>-->
+				<ul class="menu">
+					<li tabindex="0" data-index="4">
+						<!--<a href="login.html">登录 | 注册</a>-->
+						<a>
+							<span1 onclick="util.redict('login.html')">登录</span1> |
+							<span1 onclick="util.redict('register.html')">注册</span1>
+						</a>
+						<!--|-->
+						<!--<a href="register.html">注册</a>-->
+					</li>
+					<li tabindex="0" data-index="3">
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li tabindex="0" data-index="2"> 
+						<a href="carOwnersEncyclopedia.html">车主百科</a>
+					</li>
+					<li tabindex="0" data-index="1">
+						<a href="securityCanter.html">保障大厅</a>
+					</li>
+					<li tabindex="0" data-index="0">
+						<a href="ClaimCenter.html" class="active">理赔中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="userCenter.html">个人中心</a>
+					</li>
+					<li tabindex="0" data-index="99">
+						<a href="index.html">首页</a>
+					</li>
+				</ul>
+				<span class="fl-left icon-logo"></span>
+			</div>
+		</div>
+
+		<div id="claim-deatil1"></div>
+
+		<div>
+			<div class='model2' data-page=3>
+				<div class="container">
+					<div id="claim-deatil2"></div>
+					<ul class="pagination pull-right">
+				</div>
+			</div>
+		</div>
+		<div id="claim-deatil3"></div>
+
+		</ul>
+		<div class="footer">
+			<div class="detail">
+				<div class="bfooter-c">
+					<div class="model">
+						<div><a href="#2">活动专区</a></div>
+						<div><a href="#2">进行活动</a></div>
+						<div><a href="#3">热门活动</a></div>
+						<div><a href="#2">往期活动</a></div>
+					</div>
+					<div class="model">
+						<div><a href="#2">关于公司</a></div>
+						<div><a href="#2">公司简介</a></div>
+						<div><a href="#2">加入我们</a></div>
+						<div><a href="#3">企业动态</a></div>
+					</div>
+					<div class="model">
+						<div><a href="#2">关于我们</a></div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-wb'></span>">新浪微博</a>
+						</div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-wx'></span>">官方微信</a>
+						</div>
+						<div>
+							<a data-toggle="tooltip" data-placement="right" title="<span class='code-tt'></span>">官方头条</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="fl-right">
+					<div>联系方式</div>
+					<div>400-100-0306</div>
+					<div>(周一至周日9:00-18:30)</div>
+				</div>
+				<!--<div class="sidebar">侧边栏</div>-->
+			</div>
+			
+
+			<div class="f-bootom">
+				<img src="./img/bottom-line.png"/>
+				<p>版权归深圳众保汽车俱乐部和深圳成为智能交通系统有限公司所有  | <a href="ZBLawStatement.html">法律申明</a> | <a href="ZBTiaoKuan.html">隐私条款</a></p>
+				<p><a class="icp" href="http://www.miit.gov.cn"><span>粤ICP备11046807号-8</span></a></p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/handlebars.min.js"></script>
+	<script type="text/x-handlebars-template" id="entry-template1">
+		<div class='model2' data-page=1>
+			<div class="container h-height2">
+				<h3 class="h-top1">{{process.title1}}</h3>
+				<h4 class="h-bottom1">{{process.title2}}</h4>
+				<div class="img-process"></div>
+				<ul class="ul-process">
+					{{#each process.process}}
+					<li>
+						<p>{{name}}</p>
+						{{#each detail}}
+						<p>{{text}}</p>
+						{{/each}}
+					</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+		<div class='model2' data-page=2>
+			<div class="container h-height1">
+				<h3 class="h-top1">{{progress.title1}}</h3>
+				<h4 class="h-bottom1">{{progress.title2}}</h4>
+				<div class="img-progress"></div>
+				<ul class="ul-progress">
+					{{#each progress.progress}}
+					<li>
+						<p>{{name}}</p>
+						{{#each detail}}
+						<p>{{text}}</p>
+						{{/each}}
+					</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</script>
+	<script type="text/x-handlebars-template" id="entry-template2">
+
+		<h3 class="h-top2">{{public.title1}}</h3>
+		<h4 class="h-bottom2">{{public.title2}}</h4>
+		<ul class="public-list">
+			{{#each public.result}}
+			<li>
+				<div class="public-img">
+					<ul>
+						{{#each img}}
+						<li><img src={{photopath}} /></li>
+						{{/each}}
+					</ul>
+				</div>
+				<div class="public-detail">
+					<p style="font-weight: 600;">{{userName}}</p>
+					<br />
+					<p>时间：<span>{{noticeTime}}</span></p>
+					<br />
+					<p>车牌号：<span>{{carNumber}}</span></p>
+					<br />
+					<p>事件：</p><span>{{infoabstract}}</span>
+					<br />
+					<p>理赔金额：<span class="claim-account">{{amount}}</span></p>
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+
+	</script>
+	<script type="text/x-handlebars-template" id="entry-template3">
+		<div class='model2' data-page=4>
+			<div class="container">
+				<h3 class="h-top3">{{claimlist.title1}}</h3>
+				<h4 class="h-bottom3">{{claimlist.title2}}</h4>
+				<ul class="claim-list">
+					{{#each claimlist.list}}
+					<li>
+						<div>
+							<img src={{img}} />
+							<span>{{title}}</span>
+						</div>
+					</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+		<div class='model2' data-page=5>
+			<div class="container">
+				<h3 class="h-top3">{{problemlist.title1}}</h3>
+				<h4 class="h-bottom3">{{problemlist.title2}}</h4>
+				<ul class="problem-list">
+					{{#each problemlist.list}}
+					<li>
+						<h4>{{problem}}</h4>
+						<p>{{detail}}</p>
+						{{#each answer}}
+						<p>{{text}}</p>
+						{{/each}}
+					</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/ClaimCenter.js"></script>
+
+</html>

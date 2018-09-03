@@ -1,0 +1,53 @@
+
+body{
+	background: #F9F9F9;
+	font-family: "平方中体";
+}
+.p-top{
+	margin-top: 50px;
+}
+.p-bottom{
+	margin-bottom: 50px;
+}
+.panel-body{
+	font-size: 14px;
+}
+.panel-body span{
+	line-height: 220%;
+	display: block;
+}
+.panel-body img{
+	height: 200px;
+	width: 200px;
+}
+.panel-body>p:nth-child(n+3){
+	margin-top: 50px;
+}
+.panel-top > .panel-heading {
+	padding: 20px 30px 20px;
+  	background: #EEEEEE;
+}
+
+
+/*adoutUs*/
+.about-qmac, .about-active{
+	width: 100%;	
+	overflow: hidden;
+	text-align: center;
+}
+.about-qmac{
+	background: #FFFFFF;
+	height: 600px;
+}
+.about-active .container>h3, .about-qmac .container>h3{
+	margin-top: 190px;
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+.about-qmac p{
+	font-size: 18px;
+	line-height: 180%;
+}
+.about-active{
+	background: #F7F7F7;
+}

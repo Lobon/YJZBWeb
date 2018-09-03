@@ -1,0 +1,506 @@
+/*1rem=12px*/
+@media only screen and (max-width: 1170px) {
+	html {
+		overflow-x: scroll;
+		width: 1170px;
+	}
+	header {
+		height: 120px;
+		position: fixed;
+		top: 0;
+		z-index: 88;
+		background: -webkit-linear-gradient(#ffffff, #f8f8f8); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(#ffffff, #f8f8f8); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(#ffffff, #f8f8f8); /* Firefox 3.6 - 15 */
+        background: linear-gradient(#ffffff, #f8f8f8); /* 标准的语法（必须放在最后） */
+		width: 1170px;
+		font-family: "平方中体";
+	}
+}
+
+@media only screen and (min-width: 1171px) {
+	html {
+		
+	}
+	header {
+		height: 120px;
+		position: fixed;
+		top: 0;
+		z-index: 88;
+		background: -webkit-linear-gradient(#ffffff, #f8f8f8); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(#ffffff, #f8f8f8); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(#ffffff, #f8f8f8); /* Firefox 3.6 - 15 */
+        background: linear-gradient(#ffffff, #f8f8f8); /* 标准的语法（必须放在最后） */
+		width: 100%;
+		font-family: "平方中体";
+	}
+}
+/*页面右边距*/
+	.l-margin {
+		margin-left: 18.6%;
+	}
+	/*页面左边距*/
+	.r-margin {
+		margin-right: 18.6%;
+	}
+* {
+	margin: 0;
+	padding: 0;
+}
+.section1 { background: url(../img/1.jpg) no-repeat 50%;}
+.section2 { background: url(../img/2.jpg) no-repeat 50%;}  
+.section3 { background: url(../img/3.jpg) no-repeat 50%;}
+.section4 { background: url(../img/4.jpg) no-repeat 50%;}
+.fl-right {
+	float: right;
+}
+
+.fl-left {
+	float: left;
+}
+
+.m-right {
+	margin-right: 0.2rem;
+}
+/*首页弹出*/
+.home-page{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/1.jpg) 50% no-repeat;
+	z-index: 89;
+	position: absolute;
+}
+.home-mask{
+	width: 100%;
+	height: 100%;
+	top: 0; 
+	left: 0; 
+	right: 0;
+	background: #FFFFFF;
+	opacity: 0.7;
+	z-index: 90;
+	position: absolute; 
+
+}
+.home-logo{
+	width: 100%;
+	height: 100%;
+	top: 0; 
+	left: 0; 
+	right: 0;
+	/*background: url(../img/big-logo.png) 50% no-repeat;
+	background-size: 80%;
+	*/  
+	opacity: 0.5;
+	z-index: 90; 
+	position: absolute; 
+	animation: scale 2s ease-in-out infinite;
+	-webkit-animation: scale 2s ease-in-out infinite;
+	-ms-animation: scale 2s ease-in-out infinite;
+}
+.home-logo p{ 
+	color: #FFFFFF;	
+	font-size: 1.2rem;
+	font-family: "叶根友毛笔行书简体";
+	font-weight: 100%;
+	text-align: center;
+} 
+.home-logo p:nth-child(2){
+	margin-top: 0.10rem;
+	font-size: 0.6rem;
+}
+/*首页缩小动画*/
+@-webkit-keyframes scale {
+	from{transform: scale(1.5);}
+    to{transform: scale(1.0);}
+}
+@-ms-keyframes fadeOut1 {
+	from{transform: scale(1.5);}
+    to{transform: scale(1.0);}
+}
+@keyframes fadeOut1 {
+	from{transform: scale(1.5);}
+    to{transform: scale(1.0);}
+}
+
+.v-center {
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	/* IE 9 */
+	-moz-transform: translateY(-50%);
+	/* Firefox */
+	-webkit-transform: translateY(-50%);
+	/* Safari 和 Chrome */
+	-o-transform: translateY(-50%);
+	/* Opera */
+}
+
+header .container {
+	/*background: #CBD1A2;*/
+	position: relative;
+	margin-left: 375px;
+	margin-right: 375px;
+	height: 100%;
+}
+
+header .icon {
+	height: 20px;
+	right: 0;
+}
+
+header span {
+	display: block;
+	height: 20px;
+	cursor: pointer;
+}
+
+header .icon-user {
+	background: url(../img/icon-user1.png) 50% no-repeat;
+	width: 20px;
+	margin-right: 10px;
+	height: 100%;
+}
+header .icon-user:hover{
+	background: url(../img/icon-user2.png) 50% no-repeat;
+}
+
+header .lang-zh {
+	background: url(../img/lang-zh.png) 50% no-repeat;
+	width: 30px;
+	height: 100%;
+}
+
+header .icon-logo {
+	background: url(../img/icon-logo.png) no-repeat 50%;
+	width: 180px;
+	height: 100%;
+}
+
+
+/*导航栏*/
+
+.menu {
+	/*margin-bottom: 220px;*/
+	list-style: none;
+	padding: 0;
+	height: 100%;
+	line-height: 120px;
+}
+
+.menu li {
+	font-size: 14px;
+	color: #666666;
+	float: right;
+	margin-right: 50px;
+	padding-left: 5px;
+}
+.menu li a{
+	text-decoration: none;
+	color: #666666;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.menu> li:first-child {
+	margin-right: 70px;
+}
+
+.menu> li:last-child {
+	margin-right: 66px;
+}
+
+.menu ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+.menu ul li:first-child{
+	border-top: 1px solid #FED9DA;
+}
+
+.menu> li {
+	position: relative;
+	display: inline-block;
+	outline: 0;
+	cursor: pointer;
+}
+
+.submenu {
+	position: absolute;
+	left: 0;
+	/*top: 100%;*/
+	z-index: 0;
+	overflow: hidden;
+	/* IE8 needs this */
+	overflow: hidden\0/ !important;
+	max-height: 0;
+	/* A .submenu should be only revealed when hovering the .menu */
+	pointer-events: none;
+}
+
+.menu> li:hover .submenu,
+.menu> li:focus .submenu {
+	pointer-events: auto;
+	z-index: 10;
+	max-height: 2000px;
+	-webkit-transition: none;
+	-moz-transition: none;
+}
+
+
+/* Default
+ ================================================================= */
+
+.submenu li{
+	opacity: 0;
+	background: #FFFFFF;
+	width: 110px;
+	height: 40px;
+	line-height: 40px;
+	/*文字上下居中*/
+	-webkit-transition: opacity .4s, -webkit-transform .6s, max-height .6s;
+	-moz-transition: opacity .4s, -moz-transform .6s, max-height .6s;
+	-ms-transition: opacity .4s, -ms-transform .6s, max-height .6s;
+	-o-transition: opacity .4s, -o-transform .6s, max-height .6s;
+	transition: opacity .4s, transform .6s, max-height .6s;
+}
+
+.submenu li:hover {
+	background: #E6E6E6;
+}
+
+.menu> li:hover .submenu li{
+	opacity: 1;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
+
+/* Venitian
+ ================================================================= */
+
+.venitian li {
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform: scale(1, 0);
+	-moz-transform: scale(1, 0);
+	-ms-transform: scale(1, 0);
+	-o-transform: scale(1, 0);
+	transform: scale(1, 0);
+}
+
+
+/**/
+
+.mask {
+	background: #333333;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	opacity: 0.3;
+	position: absolute;
+}
+
+.content {
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+
+/*文字动画*/
+@-webkit-keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+@-ms-keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+@-webkit-keyframes fadeIn2 {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	30% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeIn2 {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	30% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+keyframes fadeIn2 {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	30% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -150%, 0);
+		-ms-transform: translate3d(0, -150%, 0);
+		transform: translate3d(0, -150%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/*
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+*/
+.content{
+	font-family: "叶根友毛笔行书简体";
+}
+#qwe p{
+	font-family: "叶根友毛笔行书简体";
+}
+.content .title1 {
+	color: #FFFFFF;
+	margin-top: 3.0rem;
+	font-size: 1rem;
+	animation: fadeInDown 2s; 
+	-webkit-animation: fadeInDown 2s;
+	-ms-animation: fadeInDown 2s;
+}
+.content .title2 {	
+	color: #FFFFFF;
+	margin-top: 0.10rem;
+	font-size: 0.6rem;
+	animation: fadeIn2 2.5s;
+	-webkit-animation: fadeIn2 2.5s;
+	-ms-animation: fadeIn2 2.5s;
+}
+.content .title3 {
+	color: #FFFFFF;
+	margin-top: 3.6rem;
+	font-size: 1.2rem;
+}
+.content .title4 {	
+	color: #FFFFFF;
+	margin-top: 0.10rem;
+	font-size: 0.6rem;
+	animation: fadeIn2 2.5s;
+	-webkit-animation: fadeIn2 2.5s;
+	-ms-animation: fadeIn2 2.5s;
+}
+.content .next span {
+	display: block;
+	background: url(../img/icon-next.png) 50% no-repeat;
+	cursor: pointer;
+	width: 8%;
+	height: 80px;
+	margin-left: 46%;
+	animation: fadeIn3 1s ease-in-out infinite;
+	-webkit-animation: fadeIn3 1s ease-in-out infinite;
+	-ms-animation: fadeIn3 1s ease-in-out infinite;
+}
+@keyframes fadeIn3{
+	from {
+		-webkit-transform: translate3d(-5%, 0, 0);
+		transform: translate3d(-5%, 0, 0);
+	}
+	to {
+		-webkit-transform: translate3d(5%, 0, 0);
+		transform: translate3d(5%, 0, 0);
+	}
+}
+@-webkit-keyframes fadeIn3{
+	from {
+		-webkit-transform: translate3d(-5%, 0, 0);
+		transform: translate3d(-5%, 0, 0);
+	}
+	to {
+		-webkit-transform: translate3d(5%, 0, 0);
+		transform: translate3d(5%, 0, 0);
+	}
+} 
