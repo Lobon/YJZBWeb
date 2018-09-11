@@ -3,25 +3,11 @@
 		overflow-x:scroll; 
 		width: 1170px;
 	}
-	.header{
-	background: -webkit-linear-gradient(#ffffff, #f8f8f8); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(#ffffff, #f8f8f8); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(#ffffff, #f8f8f8); /* Firefox 3.6 - 15 */
-    background: linear-gradient(#ffffff, #f8f8f8); /* 标准的语法（必须放在最后） */
-	width: 1170px;
-	}
+
 }
 
 @media only screen and (min-width: 1171px) {
-	html{ 		
-	}
-	.header{
-	background: -webkit-linear-gradient(#ffffff, #f8f8f8); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(#ffffff, #f8f8f8); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(#ffffff, #f8f8f8); /* Firefox 3.6 - 15 */
-    background: linear-gradient(#ffffff, #f8f8f8); /* 标准的语法（必须放在最后） */
-	width: 100%;
-	}
+
 }
 * {
   margin: 0;
@@ -51,6 +37,9 @@
 .m-right{
 	margin-right: 2rem; 
 }
+
+/*页面首标题top距离*/
+.b-top{margin-top: 80px;}
 /*底部边框*/
 .bottom-border{
 	border-bottom: 1px solid #E6E6E6;
@@ -87,3 +76,149 @@
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
           transform: translateY(-50%);}
+/*页面标题图*/
+.banner-img{
+	width: 100%;
+	height: 460px;	
+	margin-top: 80px;
+}
+/*页面banner图片*/
+.img-lipei{background:url(../img/01.png) 50% 50% no-repeat;}
+.img-carowners{background:url(../img/01.png) 50% 50% no-repeat;}
+/*小标题*/
+.p-headline{
+	text-align: center;
+	width: 100%;
+	vertical-align: middle;
+}
+.p-headline .p-head1{display: table;margin: auto;}
+.p-headline .p-title1{
+	color: #333333;
+	font-size: 34px;
+	line-height: 35px;
+	font-weight: 600;
+	float: left;
+}
+.p-headline .p-title2{
+	color: #666666;
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	line-height: 35px;
+	
+}
+.p-headline .p-left-icon{
+	height: 35px;
+	width: 330px;
+	display: inline-block;
+	background: url(../img/p-left-icon.png) 50% no-repeat;
+	line-height: 35px;
+	float: left;
+}
+.p-headline .p-right-icon{
+	height: 35px;
+	width: 330px;
+	display: inline-block;
+	background: url(../img/p-right-icon.png) 50% no-repeat;
+	float: left;
+}
+/*底部浮窗*/
+.float_window {
+	position: fixed;
+	bottom: 60px;
+	right: 50px;
+	z-index: 99;
+}
+.float_window .d-icon {
+	width: 100%;
+	display: table;
+	position: relative;
+	height: 40px;
+}
+.float_window .float-text {
+	height: 40px;
+	width: 40px;
+	background-color: rgba(225, 225, 225, .2);
+	opacity: 0;
+	display: block;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	float: right;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #FFFFFF;
+	position: absolute;
+	right: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/*用于文字省略*/
+	transition: width 1s;
+	-moz-transition: width 1s, -moz-transform 1s;
+	/* Firefox 4 */
+	-webkit-transition: width 1s, -webkit-transform 1s;
+	/* Safari and Chrome */
+	-o-transition: width 1s, -o-transform 1s;
+	/* Opera */
+}
+.float_window .float-text:hover {
+	opacity: 1;
+	padding-right: 20px;
+}
+.float_window .float-text-tel:hover{
+	width: 180px;
+}.float_window .float-text-qq:hover{
+	width: 170px;
+}.float_window .float-text-top:hover{
+	width: 140px;
+}
+.float_window .float_icon {
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	float: right;
+}
+.float_window .float_tag {
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #FFFFFF;
+	font-size: 20px;
+	float: right;
+}
+.float_window .tel_icon {background-image: url(../img/icon-tel-img.png);}
+.float_window .qq_icon {background-image: url(../img/icon-qq-img.png);}
+.float_window .code_icon {background-image: url(../img/icon-code-img.png);}
+.float_window .top_icon {background-image: url(../img/icon-top-img.png);}
+.float_window .d-icon #code {
+	height: 160px;
+	width: 40px;
+	display: block;
+	border-radius: 20px;
+	background-image: url(../img/weixincode2.png);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0px;
+	opacity: 0;
+	transition: width 1s;
+	-moz-transition: width 1s, -moz-transform 1s;
+	/* Firefox 4 */
+	-webkit-transition: width 1s, -webkit-transform 1s;
+	/* Safari and Chrome */
+	-o-transition: width 1s, -o-transform 1s;
+	/* Opera */
+}
+.float_window .d-icon #code:hover {
+	width: 220px;
+	opacity: 1;
+}
+.float_window #btn-top{cursor: pointer;}

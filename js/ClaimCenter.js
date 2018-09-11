@@ -1,4 +1,5 @@
 $(function() {
+	header();
 	//获取页面内容
 	var lang = util.getLocal("lang") != null ? util.getLocal("lang") : "zh";
 	var pageIndex = 1;
@@ -13,13 +14,13 @@ $(function() {
 		$("#claim-deatil1").html(template1(data));
 		$("#claim-deatil3").html(template3(data));
 		
-		source2 = $("#entry-template2").html();
-		template2 = Handlebars.compile(source2);
-		getClaimPublic(data, pageIndex, pageSize);
-		pagination(data);
+		//source2 = $("#entry-template2").html();
+		//template2 = Handlebars.compile(source2);
+		//getClaimPublic(data, pageIndex, pageSize);
+		//pagination(data);
 		//paginationAction();
 	})
- 
+  
 	//页面适配
 	var adtapter = adapter();
 	//理赔公式列表

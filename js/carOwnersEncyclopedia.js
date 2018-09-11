@@ -1,11 +1,12 @@
 $(function() {	
+	header();
 	$.getJSON("i18n/zh/carOwnersEncyclopedia.json", function(data) {
 		var source = $("#entry-template").html();
 		var template = Handlebars.compile(source);
 		var context = template(data);		
 		$("#carOwnwer").html(context);
 		/*var lis = $(".centerList li");
-		var src = "";
+		var src = ""; 
 		var srcActive = "";
 		for (var i=0;i<lis.length;i++) {
 			src = lis[i].dataset.img; 

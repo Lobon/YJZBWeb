@@ -13,7 +13,7 @@ p{
 	background: #FFFFFF;
 }
 .model1:nth-child(2n), .model2:nth-child(2n+1){
-	background: #FAFAFA;
+	background: #FFFFFF;
 }
 .model1, .modal2{
 	width: 100%;
@@ -30,7 +30,6 @@ p{
 	font-family: "平方中体";
 }
 .model2 .container{
-	border-bottom: 1px solid #E6E6E6;
 	font-family: "平方中体";
 }
 .model1 .model-img{

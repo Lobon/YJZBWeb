@@ -4,55 +4,7 @@
 	height: 327px;
 }
 
-.footer .title{
-	width: 100%;
-	text-align: center;
-	font-size: 24px;
-	font-family: "平方中体";
-	position: relative;
-}
-.footer .title1{	
-	padding-top: 100px;	
-}
-.footer .title2{
-	padding-top: 10px;
-	padding-bottom: 100px;
-}
-.footer-color{
-	/*background: #F1F1F1;*/
-}
-.model .icon-lp{background: url(../img/icon-lipei.png) no-repeat top center;}
-.model .icon-kc{background: url(../img/icon-kancha.png) no-repeat top center;}
-.model .icon-fh{background: url(../img/icon-fh.png) no-repeat top center;}
-.model .icon-cz{background: url(../img/icon-growup.png) no-repeat top center;}
-.footer .div-model{
-	width: 100%;
-	position: relative;
-	padding-bottom: 100px;
-	display: table; /*用于解决子Div不能撑开父容器的问题*/
-	border-bottom: 1px solid #E6E6E6;
-}
-.footer .div-model .model{
-	text-align: center;
-	width: 292px;
-	float: left;
-	font-family: "平方中体";
-}
-.footer .div-model .model span:first-child{
-	width: 100%;
-	height: 60px;
-	display: block;
-	padding-bottom: 30px;
-}
-.footer .div-model .model p:nth-child(2){
-	font-size: 18px;
-	color: #666666;
-	margin-bottom: 30px;
-}
-.footer .div-model .model p:nth-child(n+3){
-	font-size: 16px;
-	color: #999999;
-}
+
 .footer .detail{
 	
 	height: 250px;
