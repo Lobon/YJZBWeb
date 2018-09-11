@@ -1,6 +1,5 @@
 
 body{
-	background: #F9F9F9;
 	font-family: "平方中体";
 }
 .p-top{
@@ -10,7 +9,9 @@ body{
 	margin-bottom: 50px;
 }
 .panel-body{
-	font-size: 14px;
+	font-size: 16px;
+	border: 1px solid #EEEEEE;
+	margin-bottom: 40px;
 }
 .panel-body span{
 	line-height: 220%;
@@ -23,11 +24,12 @@ body{
 .panel-body>p:nth-child(n+3){
 	margin-top: 50px;
 }
-.panel-top > .panel-heading {
-	padding: 20px 30px 20px;
+.panel-heading {
+	padding: 0px 30px 0px;
   	background: #EEEEEE;
+  	color: #333333;
 }
-
+.panel-heading h3{background: url(../img/icon-head-logo.png) 0% no-repeat;padding:0 25px 0;display: inline-block;line-height: 60px;}
 
 /*adoutUs*/
 .about-qmac, .about-active{
@@ -50,4 +52,22 @@ body{
 }
 .about-active{
 	background: #F7F7F7;
+}
+
+
+/*题卡*/
+.card-panel{
+	
+}
+.card-panel .card-img{
+	
+}
+.card-panel .q-icon, .card-panel .r-icon{
+	
+}
+.card-panel .text-question{
+	
+}
+.card-panel .text-response{
+	
 }

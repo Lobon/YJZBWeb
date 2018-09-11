@@ -31,7 +31,7 @@ var adapter = function() {
 				//width = parseInt((docEl.clientWidth - 970) / 2) + "px";
 				docEl.style.fontSize = '80px';
 				$('.container').css({
-					"width": '1170',
+					"width": '1170px',
 					"margin-left": 0,
 					"margin-right":0
 				});
@@ -41,7 +41,7 @@ var adapter = function() {
 			else if(docEl.clientWidth < 992){
 				docEl.style.fontSize = '60px';
 				$('.container').css({
-					"width": '1170',
+					"width": '1170px',
 					"margin-left": '0px',
 					"margin-right": '0px'
 				});

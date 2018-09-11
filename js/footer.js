@@ -1,4 +1,5 @@
 function footer(){
+	var wb = "code-wb";
 	var data = '<div class="detail">' +
 				'<div class="bfooter-c">' +
 					'<div class="model">' +
@@ -16,13 +17,13 @@ function footer(){
 					'<div class="model">' +
 						'<div><a href="#2">关于我们</a></div>' +
 						'<div>' +
-							'<a data-toggle="tooltip" data-placement="right" title="<span class='+'code-wb'+'></span>">新浪微博</a>' +
+							'<a data-toggle="tooltip" data-placement="right" title="<span class=\'code-wb\'></span>">新浪微博</a>' +
 						'</div>' +
 						'<div>' +
-							'<a data-toggle="tooltip" data-placement="right" title="<span class="code-wx"></span>">官方微信</a>' +
+							'<a data-toggle="tooltip" data-placement="right" title="<span class=\'code-wx\'></span>">官方微信</a>' +
 						'</div>' +
 						'<div>' +
-							'<a data-toggle="tooltip" data-placement="right" title="<span class="code-tt"></span>">官方头条</a>' +
+							'<a data-toggle="tooltip" data-placement="right" title="<span class=\'code-tt\'></span>">官方头条</a>' +
 						'</div>' +
 					'</div>' +
 				'</div>' +
