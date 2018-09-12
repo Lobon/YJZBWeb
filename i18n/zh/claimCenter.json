@@ -4,6 +4,7 @@
 "title1":"理赔流程",
 "title2":"CLAIM PROCESS",
 "img":"img-process",
+"id":"process",
 "process":[{"name":"电话报案出险","detail":[{"text":"专人一对一服务"},{"text":"责任确认 损失核定"}]},
 			{"name":"提交索赔材料","detail":[{"text":"三证一卡"},{"text":"责任认定书"},{"text":"维修发票"}]},
 			{"name":"索赔审核","detail":[{"text":"利用UBI技术还原事故现场"},{"text":"审核索赔材料真实性"}]},
@@ -15,6 +16,7 @@
 "title1":"理赔进度",
 "title2":"CLAIM PROGRESS",
 "img":"./img/img-progress.png",
+"id":"progress",
 "progress":[{"name":"电话报案","detail":[{"text":"0755-8696-2289"}]},
 			{"name":"提交事故现场照片"},
 			{"name":"远程查勘","detail":[{"text":"非人伤"}]},
@@ -27,12 +29,14 @@
 "public":{
 "title1":"理赔公示",
 "title2":"PUBLIC CLAIM",
+"id":"public",
 "result":[]
 },
 
 "claimlist":{
 "title1":"理赔材料",
 "title2":"CLAIM DOCUMENTATION",
+"id":"documentation",
 "list":[{"title":"有参照物的现场照片","img":"./img/img-canzhaowu.jpg"},
 		{"title":"现场环境照片","img":"./img/img-xianchan.jpg"},
 		{"title":"车辆损失部位照片","img":"./img/img-chesun.jpg"},
@@ -47,6 +51,7 @@
 "problemlist":{
 "title1":"理赔问题",
 "title2":"COMMON ISSUES",
+"id":"issues",
 "list":[{"problem":"交强险的主要保险责任范围是什么？",
 			"answer":
 			[{"text":"（1）已投保交强险的机动车发生交通事故造成人身伤亡、财产损失的，由众保在按照国家交强险责任限额范围内予以赔偿。"},

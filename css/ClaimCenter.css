@@ -134,9 +134,9 @@ ul li{
 	border: none;
 }
 .claim-list li>div img:hover{	
-	-ms-transform:scale(3,3); /* IE 9 */
-	-webkit-transform: scale(3,3); /* Safari */
-	transform: scale(3,3); /* 标准语法 */
+	-ms-transform:scale(2,2); /* IE 9 */
+	-webkit-transform: scale(2,2); /* Safari */
+	transform: scale(2,2); /* 标准语法 */
 
 }
 .claim-list li>div span{

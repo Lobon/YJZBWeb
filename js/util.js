@@ -85,7 +85,20 @@ var util = {
 			scrollTop = document.body.scrollTop;
 		}
 		return scrollTop;
+	}, 
+	//定位到固定位置
+	toIndex: function(index,tag) {
+		var t_a = $("["+tag+"='" + index + "']").offset();
+			$("html,body").animate({
+				scrollTop: t_a.top - "80" + "px"
+			}, 0);
 	},
+	//获取url参数
+	getUrlParam: function (name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+ },
 	//导航栏右上角的登录、注册跳转
 	redict:	function (canshu) {         
           //接下来使用js代码进行页面跳转  

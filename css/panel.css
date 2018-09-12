@@ -3,7 +3,7 @@ body{
 	font-family: "平方中体";
 }
 .p-top{
-	margin-top: 50px;
+	margin-top: 80px;
 }
 .p-bottom{
 	margin-bottom: 50px;
@@ -55,19 +55,97 @@ body{
 }
 
 
-/*题卡*/
+/*问题题卡*/
 .card-panel{
+	display: table;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+.card-panel li {
+	list-style: none;
+	width: 265px;
+	height: 310px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.card-panel li:hover {box-shadow: 0px 1px 5px 1px rgba(7, 0, 1, 0.1);}
+.card-panel .card-img {
+	width: 265px;
+	height: 210px;
+	border: 0;
+}
+.card-panel .c-pop {
+	width: 265px;
+	height: 310px;
+	top: 0;
+	left: 0;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	position: absolute;
+}
+.card-panel .c-pop:hover {
+	opacity: 1;
+	filter: alpha(opacity=1);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+.card-panel .c-pop .pop-img {
+	width: 265px;
+	height: 210px;
+	background: rgba(0, 0, 0, .1);
+	text-align: center;
+	overflow: hidden;
+}
+.card-panel .c-pop .pop-img span {
+	color: #FFFFFF;
+	font-size: 20px;
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 105px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.card-panel .card-content {padding: 15px;}
+.card-panel .q-icon,
+.card-panel .r-icon {
+	color: #FFFFFF;
+	font-size: 12px;
+	margin-right: 12px;
+	line-height: 16px;
+	float: left;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+}
+.q-icon {background: #858585;}
+.r-icon {background: #E60012;}
+.card-panel .text-question
+{
+	font-size: 14px;
+	color: #033333;
+	height: 30px;
+}
+.card-panel .text-response {
+	font-size: 14px;
+	color: #999999;
+	display: table;
+	width: 100%;
+	margin-bottom: 10px;
 	
 }
-.card-panel .card-img{
-	
-}
-.card-panel .q-icon, .card-panel .r-icon{
-	
-}
-.card-panel .text-question{
-	
-}
-.card-panel .text-response{
-	
+.card-panel .text-question .cart-question{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.card-panel .cart-text {
+	display: block;
+	width: 80%;
+	float: left;
+	line-height: 20px;
 }
